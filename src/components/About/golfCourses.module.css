@@ -1,0 +1,30 @@
+.golf-course-header{
+  text-align: center;
+  border-bottom: 3px solid hsl(var(--clr-black), .4);
+  margin: 3rem 10vw;
+}
+
+.golf-course-img{
+  max-height: 50px;
+    width: auto;
+}
+
+.golf-course-container{
+  background-color: white;
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: .3rem;
+
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5rem 5vw;
+
+}

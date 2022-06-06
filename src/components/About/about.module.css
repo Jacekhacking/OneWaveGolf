@@ -1,0 +1,30 @@
+.port-pic{
+
+    float:right;
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+.about-header{
+text-align: center;
+    border-bottom: 2px solid hsl(var(--clr-black));
+}
+
+.about-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 500px;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+}
+
+

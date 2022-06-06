@@ -1,0 +1,25 @@
+.footer-social-media-container{
+    background-color: hsl(var(--clr-black));
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    min-height: 4rem;
+    align-items: center;
+}
+
+
+.footer-copyright-container{
+    background: black;
+    color:white;
+    min-height: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-image{
+    height: 50px;
+    width: auto;
+}
+

@@ -1,7 +1,7 @@
 .golf-course-header{
   text-align: center;
-  border-bottom: 3px solid hsl(var(--clr-black), .4);
-  margin: 3rem 10vw;
+  /*border-bottom: 3px solid hsl(var(--clr-black), .4);*/
+  margin: 0 20vw;
 }
 
 .golf-course-img{
@@ -24,7 +24,7 @@
 .container{
   display: flex;
   justify-content: space-between;
-
   padding: 5rem 5vw;
-
 }
+
+

@@ -1,7 +1,6 @@
 .port-pic{
-
     float:right;
-    width: 45%;
+    width: 45vw;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
@@ -11,7 +10,6 @@
 
 .about-header{
 text-align: center;
-    border-bottom: 2px solid hsl(var(--clr-black));
 }
 
 .about-container{

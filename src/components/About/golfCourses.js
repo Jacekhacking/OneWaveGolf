@@ -10,6 +10,18 @@ const golfCourses = () => {
     return (
 <Fragment>
     <h2 className={style['golf-course-header']}>Supported by courses like</h2>
+
+    {/* filler divs for styled underline */}
+    <div className='flex'
+         style={{justifyContent:'center'}}>
+        <div className={'accent-line'}></div>
+    </div>
+    <div className='flex'
+         style={{justifyContent:'center'}}>
+        <div className={'accent-box'}></div>
+    </div>
+
+
     <ul className={style['container']}>
         <li className={style['golf-course-container']}><img className={style['golf-course-img']} src={logo_1} alt=""/></li>
         <li className={style['golf-course-container']}><img className={style['golf-course-img']} src={logo_2} alt=""/></li>

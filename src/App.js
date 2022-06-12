@@ -11,7 +11,6 @@ function App() {
         <body>
         <Navigation/>
         <Hero/>
-
         <About/>
         </body>
         <Footer/>

@@ -28,8 +28,6 @@ const golfCourses = () => {
         <li className={style['golf-course-container']}><img className={style['golf-course-img']} src={logo_3} alt=""/></li>
         <li className={style['golf-course-container']}><img className={style['golf-course-img']} src={logo_4} alt=""/></li>
         <li className={style['golf-course-container']}><img className={style['golf-course-img']} src={logo_5} alt=""/></li>
-
-
     </ul>
 
 </Fragment>

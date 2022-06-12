@@ -7,10 +7,10 @@ const navigation = () => {
     return(
 
             <div className={`${style['nav-container']} flex gradient-background`}>
-                <img className={style['nav-logo']} src={logo} alt="one wave logo"/>
+                <a href="#Home"><img className={style['nav-logo']} src={logo} alt="one wave logo"/></a>
                 <ul className={'flex'}>
-                    <li className={style['nav-item']}>About</li>
-                    <li className={style['nav-item']}>JP Wedges</li>
+                    <li className={style['nav-item']}><a href="#About">About</a></li>
+                    <li className={style['nav-item']}><a href="#Wedges">JP Wedges</a></li>
                 </ul>
             </div>
 

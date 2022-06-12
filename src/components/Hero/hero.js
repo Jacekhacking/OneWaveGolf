@@ -4,7 +4,7 @@ import filler from "../UI/Images/filler-image.jpeg"
 
 const hero = () => {
     return (
-        <div className={`${style['hero-container']} flex gradient-background`}>
+        <div id = "Home" className={`${style['hero-container']} flex gradient-background`}>
             <img className={style['hero-img']} src={filler} alt=""/>
 
             <div className={`${style['hero-text-container']} flex`}>

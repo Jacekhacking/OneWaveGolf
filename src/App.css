@@ -27,7 +27,7 @@
 
     /*fonts*/
 
-    --ff-header: font-family 'Raleway', sans-serif;
+    --ff-cursive: 'Permanent Marker', cursive;
 
 
 }
@@ -226,7 +226,7 @@ li{
 /* typography   */
 
 
-.ff-header{font-family: var(--ff-header)}
+.ff-cursive{font-family: var(--ff-cursive)}
 
 .letter-spacing-1 { letter-spacing: 4.75px; }
 .letter-spacing-2 { letter-spacing: 2.7px; }

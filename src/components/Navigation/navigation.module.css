@@ -19,5 +19,6 @@
 }
 .nav-item>a{
     color: inherit;
+    font-family: var(--ff-cursive);
 }
 

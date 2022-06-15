@@ -8,7 +8,10 @@ const about = () => {
     return (
         <Fragment>
 
-            <h2 id = "About" className={style['about-header']}>ABOUT  ME!</h2>
+
+
+                <h2 id = "About" className={`${style['about-header']} ff-cursive`}>About OneWaveGolf</h2>
+
 
             {/* filler divs for styled underline */}
             <div className='flex'
@@ -23,11 +26,25 @@ const about = () => {
 
 
             <div className={`${style['about-container']}`}>
-                <p className={'ff-body'}>filler contet balbh
-                    wblah blahfiller contet balbh wblah blahfiller contet balbh
-                    wblah blahfiller contet balbh wblah blahfiller
-                    contet balbh wblah blahfiller contet balbh
-                    wblah blahfiller contet balbh  wblah blahfiller contet balbh  wblah blah</p>
+                <p className={'ff-body'}>One Wave Golf is a collaborative golf hub. All things golf, you can find it here.
+                    <ul>
+                        <li>JP Wedges sold here - click this link to view the shop</li>
+                        <li>Recycled Golf textiles - click this link to view the shop & to see which courses are using our products</li>
+                        <li>Golf Tours & Experiences</li>
+                        <li>Caddy Lessons - learn from the best</li>
+                        <li>Golf for Kids - lessons</li>
+                        <li>The Chiari Community - click here to learn more about Chiari Warriors</li>
+                    </ul>
+                </p>
+
+
+            </div>
+            <div className={'flex'}
+            style={{
+                justifyContent:'center'
+            }
+            }>
+
                 <img className={style['port-pic']} src={RustinPic} alt=""/>
             </div>
             <Wedges/>

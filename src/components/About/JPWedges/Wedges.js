@@ -3,7 +3,7 @@ import React from "react";
 const Wedges = () => {
     return(
         <div id = "Wedges">
-            <h2 style={{textAlign:'center'}}>Filler Header</h2>
+            <h2  className={'ff-cursive'} style={{textAlign:'center'}}>JP WEDGES</h2>
             {/* filler divs for styled underline */}
             <div className='flex'
                  style={{justifyContent:'center'}}>
@@ -15,9 +15,8 @@ const Wedges = () => {
             </div>
 
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores beatae, commodi debitis dicta
-                dolores esse harum, impedit iure labore maiores placeat porro praesentium quam quidem recusandae
-                veritatis voluptas voluptatem.</p>
+            <p className={'container'}>One Wave Golf is at the forefront of new golf equipment technology. We are partners with JP Golf Co. to sell & spread the future of wedges & golf clubs.
+                <a href="https://jpgolf.com/">Shop JP wedges</a> </p>
         </div>
     )
 }

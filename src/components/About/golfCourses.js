@@ -9,7 +9,7 @@ import logo_5 from "../UI/Images/golf logos/sheepranch copy.png";
 const golfCourses = () => {
     return (
 <Fragment>
-    <h2 className={style['golf-course-header']}>Supported by courses like</h2>
+    <h2 className={`${style['golf-course-header']} ff-cursive`}>Supported by courses like</h2>
 
     {/* filler divs for styled underline */}
     <div className='flex'

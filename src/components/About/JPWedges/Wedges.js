@@ -19,9 +19,11 @@ const Wedges = () => {
 
 
                 <p className={'container'}>One Wave Golf is at the forefront of new golf equipment technology. We are partners with JP Golf Co. to sell & spread the future of wedges & golf clubs.
-                    <a href="https://jpgolf.com/">Shop JP wedges</a>
 
                 </p>
+            <p style={{textAlign:'center'}}>
+                <a  href="https://jpgolf.com/">Shop JP wedges</a>
+            </p>
             <div className={'flex wrap'} style={{margin: '1vh',justifyContent:'space-evenly'}}>
                 <img
                     src={WedgePic1}

@@ -1,4 +1,7 @@
 import React from "react";
+import WedgePic1 from "../../UI/Images/jp-wedges-png.png"
+import WedgePic2 from "../../UI/Images/JP-wedge-pic-2.png"
+import WedgePic3 from "../../UI/Images/JP-wedge-pic-3.png"
 
 const Wedges = () => {
     return(
@@ -15,8 +18,42 @@ const Wedges = () => {
             </div>
 
 
-            <p className={'container'}>One Wave Golf is at the forefront of new golf equipment technology. We are partners with JP Golf Co. to sell & spread the future of wedges & golf clubs.
-                <a href="https://jpgolf.com/">Shop JP wedges</a> </p>
+                <p className={'container'}>One Wave Golf is at the forefront of new golf equipment technology. We are partners with JP Golf Co. to sell & spread the future of wedges & golf clubs.
+                    <a href="https://jpgolf.com/">Shop JP wedges</a>
+
+                </p>
+            <div className={'flex'} style={{margin: '1vh',justifyContent:'space-evenly'}}>
+                <img
+                    src={WedgePic1}
+                    style={{
+
+                        width: "400px",
+                        height: "auto",
+                        borderRadius:'5px'
+                    }}
+                    alt="JP wedges with a backdrop of Bandon Oregon"/>
+                <img
+                    src={WedgePic2}
+                    style={{
+
+                        width: "400px",
+                        height: "auto",
+                        borderRadius:'5px'
+                    }}
+                    alt="JP wedges with a backdrop of Bandon Oregon"/>
+                <img
+                    src={WedgePic3}
+                    style={{
+
+                        width: "400px",
+                        height: "auto",
+                        borderRadius:'5px'
+                    }}
+                    alt="JP wedges with a backdrop of Bandon Oregon"/>
+
+
+            </div>
+
         </div>
     )
 }

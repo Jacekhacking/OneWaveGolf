@@ -22,12 +22,12 @@ const Wedges = () => {
                     <a href="https://jpgolf.com/">Shop JP wedges</a>
 
                 </p>
-            <div className={'flex'} style={{margin: '1vh',justifyContent:'space-evenly'}}>
+            <div className={'flex wrap'} style={{margin: '1vh',justifyContent:'space-evenly'}}>
                 <img
                     src={WedgePic1}
                     style={{
 
-                        width: "400px",
+                        maxWidth: "400px",
                         height: "auto",
                         borderRadius:'5px'
                     }}
@@ -36,7 +36,7 @@ const Wedges = () => {
                     src={WedgePic2}
                     style={{
 
-                        width: "400px",
+                        maxWidth: "400px",
                         height: "auto",
                         borderRadius:'5px'
                     }}
@@ -45,7 +45,7 @@ const Wedges = () => {
                     src={WedgePic3}
                     style={{
 
-                        width: "400px",
+                        maxWidth: "400px",
                         height: "auto",
                         borderRadius:'5px'
                     }}

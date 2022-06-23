@@ -2,6 +2,7 @@
     background-color: hsl(var(--clr-black));
     color:white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-right: 6rem;
     padding-left: 6rem;

@@ -26,7 +26,7 @@ const about = () => {
 
 
 
-            <div className={`${style['about-container']}`}>
+
                 <TextParagraph>One Wave Golf is a collaborative golf hub. All things golf, you can find it here.
                     We have an extensive network within the golf world & knowledge about prestigious destinations and can help you book an amazing golf experience for you & your friends/family.
                     You will be in direct contact with us while he helps you decide on the best course for you. <a href="mailto:rustin@onewavegolf.com ">Contact us now to set up your next Golf Experience!</a>
@@ -34,7 +34,7 @@ const about = () => {
                 </TextParagraph>
 
 
-            </div>
+
             <div className={'flex'}
             style={{justifyContent:'center'}}>
                 <img className={style['port-pic']} src={RustinPic} alt=""/>

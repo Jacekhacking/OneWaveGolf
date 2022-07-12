@@ -22,3 +22,13 @@
     font-family: var(--ff-cursive);
 }
 
+@media(max-width: 500px){
+    .nav-logo{
+        padding: 5px;
+    }
+    .nav-item{
+        font-weight: 400;
+        font-size: var(--fs-200);
+    }
+}
+

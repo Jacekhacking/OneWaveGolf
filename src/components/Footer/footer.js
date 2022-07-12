@@ -6,7 +6,7 @@ const footer = () => {
     return (
         <footer>
             <div>
-                <div className={`${style['footer-social-media-container']} fs-300`}>
+                <div className={`${style['footer-social-media-container']} fs-200`}>
                     <section className={` fs-300 flex`}
                     > @copyright 2021 <section style={{color: 'grey'}}>| Multipurpose Company |</section></section>
                     <div> Connect with us on social media</div>

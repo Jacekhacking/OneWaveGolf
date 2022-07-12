@@ -16,3 +16,9 @@
     width: auto;
 }
 
+@media(max-width: 500px ){
+    .footer-social-media-container{
+        padding: 5px;
+
+    }
+}

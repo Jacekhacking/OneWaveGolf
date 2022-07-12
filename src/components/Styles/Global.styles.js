@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
 
@@ -272,3 +273,23 @@ const GlobalStyles = createGlobalStyle`
 `
 
 export default GlobalStyles
+
+
+
+export const TextParagraph = styled.p`
+
+  padding: 2em;
+  margin: auto;
+  max-width: 80rem;
+  font-size: var(--fs-500);
+  
+  @media(max-width: 1300px){
+    font-size: var(--fs-400);
+  }
+  @media(max-width: 600px){
+    font-size: var(--fs-300);
+  }
+  
+  
+  
+`

@@ -28,3 +28,15 @@
 .hero-header{
     font-size: clamp(var(--fs-400), 7.5vw, var(--fs-900));
 }
+
+@media  (max-width: 1000px){
+    .hero-container{
+        min-height: 50vh;
+    }
+}
+
+@media(max-width: 600px){
+    .hero-container{
+        min-height: 40vh;
+    }
+}

@@ -1,5 +1,5 @@
-.port-pic{
-    float:right;
+.port-pic {
+    float: right;
     width: 90vw;
     height: 35vh;
     object-fit: cover;
@@ -10,11 +10,11 @@
 }
 
 
-.about-header{
-text-align: center;
+.about-header {
+    text-align: center;
 }
 
-.about-container{
+.about-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,14 +25,14 @@ text-align: center;
     padding-left: 3rem;
 }
 
-@media(min-width: 700px){
-    .port-pic{
+@media (min-width: 700px) {
+    .port-pic {
         height: 45vh
     }
 }
 
 @media (min-width: 1000px) {
-    .port-pic{
+    .port-pic {
         height: 55vh
     }
 }

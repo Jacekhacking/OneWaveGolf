@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import {createGlobalStyle} from "styled-components"
 import styled from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
@@ -8,16 +8,16 @@ const GlobalStyles = createGlobalStyle`
   /*---------------------*/
 
 
-  :root{
+  :root {
     /*colors*/
     --clr-green: 121, 39%, 29%;
-    --clr-transition-color-1: 138, 39%,29%;
-    --clr-transition-color-2: 157, 39%,29%;
-    --clr-transition-color-3: 177, 39%,29%;
+    --clr-transition-color-1: 138, 39%, 29%;
+    --clr-transition-color-2: 157, 39%, 29%;
+    --clr-transition-color-3: 177, 39%, 29%;
     --clr-transition-color-4: 193, 39%, 29%;
     --clr-blue: 200, 39%, 29%;
     --clr-black: 193, 0%, 11%;
-    --clr-offwhite: 52,4%,96%;
+    --clr-offwhite: 52, 4%, 96%;
 
 
     /* font-sizes */
@@ -38,12 +38,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
 
-
-
   /*Box sizing*/
 
 
-  * ,
+  *,
   *::before,
   *::after {
     box-sizing: border-box;
@@ -55,8 +53,6 @@ const GlobalStyles = createGlobalStyle`
   /*---------------------*/
   /*-----CSS RESET-------*/
   /*---------------------*/
-
-
 
 
   /*Reset margins*/
@@ -71,15 +67,18 @@ const GlobalStyles = createGlobalStyle`
   picture {
     margin: 0;
   }
-  body::backdrop{
+
+  body::backdrop {
     background-color: white;
   }
+
   /* reset weight/boldness */
   h1,
   h2,
-  h3{
+  h3 {
     font-weight: 600;
   }
+
   h4,
   h5,
   h6,
@@ -97,7 +96,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: hsl(var(--clr-offwhite));
   }
 
-  html{
+  html {
     scroll-behavior: smooth;
   }
 
@@ -132,8 +131,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
 
-
-  a  {
+  a {
     color: var(--clr-dark-gray);
     border: 0;
     outline: none;
@@ -144,9 +142,14 @@ const GlobalStyles = createGlobalStyle`
     margin-right: -2px;
     text-decoration: none;
   }
-  a:visited {color:black}
 
-  a:active {color: hsl(var(--clr-sandy-brown)) ;}
+  a:visited {
+    color: black
+  }
+
+  a:active {
+    color: hsl(var(--clr-sandy-brown));
+  }
 
   a:hover {
     color: hsl(var(--clr-mint-offwhite));
@@ -155,11 +158,10 @@ const GlobalStyles = createGlobalStyle`
   ul {
     list-style-type: none;
   }
-  li{
+
+  li {
     list-style: none;
   }
-
-
 
 
   /*---------------------*/
@@ -167,13 +169,12 @@ const GlobalStyles = createGlobalStyle`
   /*---------------------*/
 
 
-
-
   .flex {
     display: flex;
     gap: var(--gap, 1rem);
   }
-  .wrap{
+
+  .wrap {
     flex-wrap: wrap;
   }
 
@@ -184,7 +185,7 @@ const GlobalStyles = createGlobalStyle`
 
 
   /* targets any element that has a previous sibling */
-  .flow > *:where(:not(:first-child)){
+  .flow > *:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
   }
 
@@ -203,50 +204,88 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     white-space: nowrap; /*added line*/
     border: 0;
   }
 
 
-
   /*  colors  */
 
 
-  .bg-green{background-color: hsl(var(--clr-green))}
-  .bg-blue{background-color: hsl(var(--clr-blue))}
+  .bg-green {
+    background-color: hsl(var(--clr-green))
+  }
+
+  .bg-blue {
+    background-color: hsl(var(--clr-blue))
+  }
 
 
-  .gradient-background{
-    background:
-            linear-gradient(90deg,
-            hsl(var(--clr-green), .7) 50%,
-            hsl(var(--clr-transition-color-1),.7),
-            hsl(var(--clr-transition-color-2),.7),
-            hsl(var(--clr-transition-color-3), .7) ,
-            hsl(var(--clr-transition-color-4), .7),
-            hsl(var(--clr-blue), .7));
+  .gradient-background {
+    background: linear-gradient(90deg,
+    hsl(var(--clr-green), .7) 50%,
+    hsl(var(--clr-transition-color-1), .7),
+    hsl(var(--clr-transition-color-2), .7),
+    hsl(var(--clr-transition-color-3), .7),
+    hsl(var(--clr-transition-color-4), .7),
+    hsl(var(--clr-blue), .7));
   }
 
   /* typography   */
 
 
-  .ff-cursive{font-family: var(--ff-cursive)}
+  .ff-cursive {
+    font-family: var(--ff-cursive)
+  }
 
-  .letter-spacing-1 { letter-spacing: 4.75px; }
-  .letter-spacing-2 { letter-spacing: 2.7px; }
-  .letter-spacing-3 { letter-spacing: 2.35px; }
+  .letter-spacing-1 {
+    letter-spacing: 4.75px;
+  }
 
-  .uppercase { text-transform: uppercase; }
+  .letter-spacing-2 {
+    letter-spacing: 2.7px;
+  }
 
-  .fs-900 { font-size: var(--fs-900); }
-  .fs-800 { font-size: var(--fs-800); }
-  .fs-700 { font-size: var(--fs-700); }
-  .fs-600 { font-size: var(--fs-600); }
-  .fs-500 { font-size: var(--fs-500); }
-  .fs-400 { font-size: var(--fs-400); }
-  .fs-300 { font-size: var(--fs-300); }
-  .fs-200 { font-size: var(--fs-200); }
+  .letter-spacing-3 {
+    letter-spacing: 2.35px;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  .fs-900 {
+    font-size: var(--fs-900);
+  }
+
+  .fs-800 {
+    font-size: var(--fs-800);
+  }
+
+  .fs-700 {
+    font-size: var(--fs-700);
+  }
+
+  .fs-600 {
+    font-size: var(--fs-600);
+  }
+
+  .fs-500 {
+    font-size: var(--fs-500);
+  }
+
+  .fs-400 {
+    font-size: var(--fs-400);
+  }
+
+  .fs-300 {
+    font-size: var(--fs-300);
+  }
+
+  .fs-200 {
+    font-size: var(--fs-200);
+  }
 
 
   .fs-900,
@@ -257,23 +296,20 @@ const GlobalStyles = createGlobalStyle`
   }
 
 
-
-
-  .accent-line{
+  .accent-line {
     height: 3px;
     width: 200px;
-    background-color: hsl(var(--clr-black),.4);
+    background-color: hsl(var(--clr-black), .4);
   }
 
-  .accent-box{
+  .accent-box {
     height: 10px;
     width: 40px;
-    background-color: hsl(var(--clr-black),.4);
+    background-color: hsl(var(--clr-black), .4);
   }
 `
 
 export default GlobalStyles
-
 
 
 export const TextParagraph = styled.p`
@@ -282,14 +318,14 @@ export const TextParagraph = styled.p`
   margin: auto;
   max-width: 80rem;
   font-size: var(--fs-500);
-  
-  @media(max-width: 1300px){
+
+  @media (max-width: 1300px) {
     font-size: var(--fs-400);
   }
-  @media(max-width: 600px){
+  @media (max-width: 600px) {
     font-size: var(--fs-300);
   }
-  
-  
-  
+
+
+
 `

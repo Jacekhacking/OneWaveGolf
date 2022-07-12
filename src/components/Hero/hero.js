@@ -1,10 +1,10 @@
-import React, {Fragment} from "react";
+
 import style from "./hero.module.css";
 // import HeroImg from "../UI/Images/heroImg.JPG"
 
 const hero = () => {
     return (
-        <Fragment>
+        <>
 
 
         <div id = "Home" className={`${style['hero-container']} flex gradient-background`}>
@@ -16,7 +16,7 @@ const hero = () => {
             </div>
         </div>
 
-        </Fragment>
+        </>
     )
 }
 

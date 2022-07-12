@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+
 import style from "./about.module.css";
 import RustinPic from "../UI/Images/rustin-pic.jpg";
 import GolfCourses from "./golfCourses.js";
@@ -7,7 +7,7 @@ import { TextParagraph } from "../Styles/Global.styles"
 
 const about = () => {
     return (
-        <Fragment>
+        <>
 
 
 
@@ -53,7 +53,7 @@ const about = () => {
             <Wedges/>
             <GolfCourses />
 
-            </Fragment>
+            </>
     )
 }
 

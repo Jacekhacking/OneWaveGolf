@@ -1,9 +1,13 @@
-/*---------------------*/
-/*--CUSTOM PROPERTIES--*/
-/*---------------------*/
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyles = createGlobalStyle`
+
+  /*---------------------*/
+  /*--CUSTOM PROPERTIES--*/
+  /*---------------------*/
 
 
-:root{
+  :root{
     /*colors*/
     --clr-green: 121, 39%, 29%;
     --clr-transition-color-1: 138, 39%,29%;
@@ -30,105 +34,105 @@
     --ff-cursive: 'Permanent Marker', cursive;
 
 
-}
+  }
 
 
 
 
-/*Box sizing*/
+  /*Box sizing*/
 
 
-* ,
-*::before,
-*::after {
+  * ,
+  *::before,
+  *::after {
     box-sizing: border-box;
 
 
-}
+  }
 
 
-/*---------------------*/
-/*-----CSS RESET-------*/
-/*---------------------*/
+  /*---------------------*/
+  /*-----CSS RESET-------*/
+  /*---------------------*/
 
 
 
 
-/*Reset margins*/
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
+  /*Reset margins*/
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  figure,
+  picture {
     margin: 0;
-}
-body::backdrop{
+  }
+  body::backdrop{
     background-color: white;
-}
-/* reset weight/boldness */
-h1,
-h2,
-h3{
+  }
+  /* reset weight/boldness */
+  h1,
+  h2,
+  h3{
     font-weight: 600;
-}
-h4,
-h5,
-h6,
-p {
+  }
+  h4,
+  h5,
+  h6,
+  p {
     font-family: var(--ff-body);
     font-weight: 300;
-}
+  }
 
-/* set up body */
-body {
+  /* set up body */
+  body {
     line-height: 2;
     min-height: 100vh;
     font-size: var(--fs-500);
     letter-spacing: 0.1em;
     background-color: hsl(var(--clr-offwhite));
-}
+  }
 
-html{
+  html{
     scroll-behavior: smooth;
-}
+  }
 
-/*make images easier to work with*/
-img,
-picture {
+  /*make images easier to work with*/
+  img,
+  picture {
     max-width: 100%;
     display: block;
-}
+  }
 
-/*make form elements easier to work with*/
+  /*make form elements easier to work with*/
 
-input,
-button,
-textarea,
-select {
+  input,
+  button,
+  textarea,
+  select {
     font: inherit;
-}
+  }
 
 
-/* remove animations for people who've turned them off */
+  /* remove animations for people who've turned them off */
 
-@media (prefers-reduced-motion: reduce) {
+  @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
     }
-}
+  }
 
 
 
-a  {
+  a  {
     color: var(--clr-dark-gray);
     border: 0;
     outline: none;
@@ -138,60 +142,60 @@ a  {
     margin-left: -2px;
     margin-right: -2px;
     text-decoration: none;
-}
-a:visited {color:black}
+  }
+  a:visited {color:black}
 
-a:active {color: hsl(var(--clr-sandy-brown)) ;}
+  a:active {color: hsl(var(--clr-sandy-brown)) ;}
 
-a:hover {
+  a:hover {
     color: hsl(var(--clr-mint-offwhite));
-}
+  }
 
-ul {
+  ul {
     list-style-type: none;
-}
-li{
+  }
+  li{
     list-style: none;
-}
+  }
 
 
 
 
-/*---------------------*/
-/*   Utility Classes   */
-/*---------------------*/
+  /*---------------------*/
+  /*   Utility Classes   */
+  /*---------------------*/
 
 
 
 
-.flex {
+  .flex {
     display: flex;
     gap: var(--gap, 1rem);
-}
-.wrap{
+  }
+  .wrap{
     flex-wrap: wrap;
-}
+  }
 
-.grid {
+  .grid {
     display: grid;
     gap: var(--gap, 1rem);
-}
+  }
 
 
-/* targets any element that has a previous sibling */
-.flow > *:where(:not(:first-child)){
+  /* targets any element that has a previous sibling */
+  .flow > *:where(:not(:first-child)){
     margin-top: var(--flow-space, 1rem);
-}
+  }
 
-.container {
+  .container {
     padding-inline: 2em;
     margin-inline: auto;
     max-width: 80rem;
-}
+  }
 
 
-/* Screen reader only!!! */
-.sr-only {
+  /* Screen reader only!!! */
+  .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -201,18 +205,18 @@ li{
     clip: rect(0,0,0,0);
     white-space: nowrap; /*added line*/
     border: 0;
-}
+  }
 
 
 
-/*  colors  */
+  /*  colors  */
 
 
-.bg-green{background-color: hsl(var(--clr-green))}
-.bg-blue{background-color: hsl(var(--clr-blue))}
+  .bg-green{background-color: hsl(var(--clr-green))}
+  .bg-blue{background-color: hsl(var(--clr-blue))}
 
 
-.gradient-background{
+  .gradient-background{
     background:
             linear-gradient(90deg,
             hsl(var(--clr-green), .7) 50%,
@@ -221,52 +225,50 @@ li{
             hsl(var(--clr-transition-color-3), .7) ,
             hsl(var(--clr-transition-color-4), .7),
             hsl(var(--clr-blue), .7));
-}
+  }
 
-/* typography   */
-
-
-.ff-cursive{font-family: var(--ff-cursive)}
-
-.letter-spacing-1 { letter-spacing: 4.75px; }
-.letter-spacing-2 { letter-spacing: 2.7px; }
-.letter-spacing-3 { letter-spacing: 2.35px; }
-
-.uppercase { text-transform: uppercase; }
-
-.fs-900 { font-size: var(--fs-900); }
-.fs-800 { font-size: var(--fs-800); }
-.fs-700 { font-size: var(--fs-700); }
-.fs-600 { font-size: var(--fs-600); }
-.fs-500 { font-size: var(--fs-500); }
-.fs-400 { font-size: var(--fs-400); }
-.fs-300 { font-size: var(--fs-300); }
-.fs-200 { font-size: var(--fs-200); }
+  /* typography   */
 
 
-.fs-900,
-.fs-800,
-.fs-700,
-.fs-600 {
+  .ff-cursive{font-family: var(--ff-cursive)}
+
+  .letter-spacing-1 { letter-spacing: 4.75px; }
+  .letter-spacing-2 { letter-spacing: 2.7px; }
+  .letter-spacing-3 { letter-spacing: 2.35px; }
+
+  .uppercase { text-transform: uppercase; }
+
+  .fs-900 { font-size: var(--fs-900); }
+  .fs-800 { font-size: var(--fs-800); }
+  .fs-700 { font-size: var(--fs-700); }
+  .fs-600 { font-size: var(--fs-600); }
+  .fs-500 { font-size: var(--fs-500); }
+  .fs-400 { font-size: var(--fs-400); }
+  .fs-300 { font-size: var(--fs-300); }
+  .fs-200 { font-size: var(--fs-200); }
+
+
+  .fs-900,
+  .fs-800,
+  .fs-700,
+  .fs-600 {
     line-height: 1.1;
-}
+  }
 
 
 
 
-.accent-line{
+  .accent-line{
     height: 3px;
     width: 200px;
     background-color: hsl(var(--clr-black),.4);
-}
+  }
 
-.accent-box{
+  .accent-box{
     height: 10px;
     width: 40px;
     background-color: hsl(var(--clr-black),.4);
-}
+  }
+`
 
-
-
-
-
+export default GlobalStyles

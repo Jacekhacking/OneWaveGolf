@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-onewavegolf-dev-173929-authRole",
+      "UnauthRoleArn": "arn:aws:iam::416705624742:role/amplify-onewavegolf-dev-173929-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::416705624742:role/amplify-onewavegolf-dev-173929-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-onewavegolf-dev-173929-deployment",
+      "UnauthRoleName": "amplify-onewavegolf-dev-173929-unauthRole",
+      "StackName": "amplify-onewavegolf-dev-173929",
+      "StackId": "arn:aws:cloudformation:us-west-1:416705624742:stack/amplify-onewavegolf-dev-173929/e03a0c20-023b-11ed-9940-06da32e0728f",
+      "AmplifyAppId": "dmkpmk0u72zv8"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dmkpmk0u72zv8",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
